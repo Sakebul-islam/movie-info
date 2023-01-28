@@ -19,7 +19,6 @@ function App() {
     });
     setMovies(transformedMovies);
   };
-
   return (
     <Fragment>
       <section>
