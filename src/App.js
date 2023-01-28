@@ -2,13 +2,12 @@ import React, { Fragment, useState } from 'react';
 
 import MoviesList from './components/MoviesList';
 import './App.css';
-const url = 'https://swapi.dev/api/films/';
 
 function App() {
   const [movies, setMovies] = useState([]);
 
-  const fetchMoviesHandler = async url => {
-    const response = await fetch(url);
+  const fetchMoviesHandler = async () => {
+    const response = await fetch('https://swapi.dev/api/films/');
     const data = await response.json();
     const transformedMovies = data.results.map(movieData => {
       return {
