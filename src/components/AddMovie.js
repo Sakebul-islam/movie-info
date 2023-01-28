@@ -12,10 +12,18 @@ function AddMovie(props) {
 
     // could add validation here...
 
+    if (
+      titleRef.current.value.trim().length == 0 ||
+      openingTextRef.current.value.trim().length == 0 ||
+      releaseDateRef.current.value.trim().length == 0
+    ) {
+      alert('Input Field is Impty !!!');
+      return;
+    }
     const movie = {
-      title: titleRef.current.value,
-      openingText: openingTextRef.current.value,
-      releaseDate: releaseDateRef.current.value,
+      title: titleRef.current.value.trim(),
+      openingText: openingTextRef.current.value.trim(),
+      releaseDate: releaseDateRef.current.value.trim(),
     };
 
     props.onAddMovie(movie);
