@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-## Live Project link : [Movie Info](https://foodcorner-sakebul.netlify.app)
+## Live Project link : [Movie Info](https://movie-info-sakebul.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
