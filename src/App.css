@@ -27,3 +27,23 @@ button:active {
   background-color: #460897;
   border-color: #460897;
 }
+
+#loading-spinner {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin: 50px auto;
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top-color: #3498db;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
